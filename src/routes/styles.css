@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: var(--app-background-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--app-header-font);
+	color: var(--app-header-color);
+}
+
+p {
+	color: var(--app-text-color);
+	font-family: var(--app-text-font);
+}
+
+a {
+	color: var(--app-link-color);
+	text-decoration: none;
+	font-family: var(--app-header-font);
+}
+
+/* global classes */
+.card {
+	background-color: var(--app-color-1);
+	border-radius: 5px;
+	color: var(--app-text-color);
+	padding: 14px 18px;
+}
+
+.fade-in {
+	animation: fade-in;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	transform: translateY(-20px);
+}
+
+.fade-out {
+	animation: fade-out;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
