@@ -7,4 +7,5 @@ export interface BlogPost {
 	pubDate: string;
 	link: string;
 	categories: string[];
+	description: string;
 }

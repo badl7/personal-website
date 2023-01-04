@@ -19,6 +19,7 @@ h3,
 h4 {
 	font-family: var(--app-header-font);
 	color: var(--app-header-color);
+	font-weight: 500;
 }
 
 p {
