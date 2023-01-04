@@ -38,6 +38,7 @@
 	}
 	.categories {
 		display: flex;
+		flex-wrap: wrap;
 		grid-gap: 10px;
 	}
 	.category-chip {
