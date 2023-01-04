@@ -52,8 +52,7 @@
 	.landing-container {
 		display: flex;
 		flex-direction: column;
-		margin-top: 50px;
-		padding: 0 25px;
+		padding: 50px 25px;
 		grid-gap: 50px;
 	}
 	.greetings-container {

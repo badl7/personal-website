@@ -1,4 +1,5 @@
 <script>
+	import { page } from '$app/stores';
 	import '$lib/fonts/jasques-family.css';
 	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
@@ -6,7 +7,7 @@
 </script>
 
 <div class="app">
-	<Header />
+	<Header activePage={$page.url} />
 	<main>
 		<slot />
 	</main>
@@ -18,6 +19,7 @@
 <style>
 	:root {
 		--app-background-color: #61305d;
+		--app-foreground-color: #83577f;
 		--app-primary-color: #b55c6c;
 		--app-link-color: #ff9800;
 		--app-header-color: #f7b679;
