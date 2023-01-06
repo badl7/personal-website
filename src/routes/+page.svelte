@@ -37,7 +37,7 @@
 	<div class="blog-posts">
 		<h2>Blog Posts</h2>
 		{#await postsPromise}
-			<h1>...</h1>
+			<h1>Loading..</h1>
 		{:then posts}
 			{#each posts as post}
 				<Post {post} />
