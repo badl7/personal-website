@@ -13,7 +13,7 @@
 
 <div class="projects-container">
 	{#await projectsPromise}
-		<h1>loading..</h1>
+		<h1>...</h1>
 	{:then projects}
 		<div class="projects">
 			{#each projects as project}
