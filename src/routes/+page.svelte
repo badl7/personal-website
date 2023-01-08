@@ -52,7 +52,7 @@
 	.landing-container {
 		display: flex;
 		flex-direction: column;
-		padding: 50px 25px;
+		padding: 50px 0;
 		grid-gap: 50px;
 	}
 	.greetings-container {
@@ -70,15 +70,25 @@
 	}
 	.personal-photo {
 		border-radius: 10px;
-		box-shadow: 20px 10px var(--app-primary-color);
+		box-shadow: 10px 5px var(--app-primary-color);
 		order: 1;
+		width: 200px;
 	}
 	.blog-posts {
 		display: flex;
 		flex-direction: column;
 		grid-gap: 50px;
 	}
+	@media (min-width: 485px) {
+		.personal-photo {
+			width: 280px;
+			box-shadow: 20px 10px var(--app-primary-color);
+		}
+	}
 	@media (min-width: 750px) {
+		.landing-container {
+			padding: 50px 25px;
+		}
 		.greetings-container {
 			flex-wrap: nowrap;
 		}
