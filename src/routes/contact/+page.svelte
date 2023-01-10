@@ -9,11 +9,14 @@
 <style>
 	.contact {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin-top: 240px;
+		grid-gap: 90px;
 	}
 	.contact a {
-		color: var(--app-primary-color);
+		color: #FF3535;
 	}
 	.contact a:hover {
 		text-decoration: underline;
