@@ -36,15 +36,17 @@
 	</div>
 	<div class="blog-posts">
 		<h2>Blog Posts</h2>
-		{#await postsPromise}
-			<h1>Loading..</h1>
-		{:then posts}
-			{#each posts as post}
-				<Post {post} />
-			{/each}
-		{:catch err}
-			<h1>error..</h1>
-		{/await}
+		<div class="post-content">
+			{#await postsPromise}
+				<h1>Welcome!</h1>
+			{:then posts}
+				{#each posts as post}
+					<Post {post} />
+				{/each}
+			{:catch err}
+				<h1>error..</h1>
+			{/await}
+	    </div>
 	</div>
 </div>
 
@@ -77,7 +79,15 @@
 	.blog-posts {
 		display: flex;
 		flex-direction: column;
-		grid-gap: 50px;
+		grid-gap: 50px 0px;
+	}
+	.blog-posts h2 {
+		color: var(--app-link-color);
+	}
+	.post-content {
+		display: flex;
+		flex-direction: column;
+		grid-gap: 1rem;
 	}
 	@media (min-width: 485px) {
 		.personal-photo {

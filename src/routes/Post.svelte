@@ -24,6 +24,7 @@
 <style>
 	a:hover h3 {
 		text-decoration: underline;
+		color: #FF3535;
 	}
 	.post {
 		display: flex;
@@ -50,7 +51,7 @@
 		padding: 4px 6px;
 		border-radius: 5px;
 		background-color: var(--app-primary-color);
-		color: var(--app-text-color);
+		color: #323232;
 		font-size: 14px;
 	}
 
