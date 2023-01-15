@@ -22,13 +22,13 @@
     padding: 50px 0;
     display: flex;
     flex-direction: column;
-    grid-gap: 50px 0px;     
+         
   }
   .quotes-container h2 {
     color: var(--app-link-color);
   }
   .quotes {
-    padding: 20px;
+    padding: 5px;
   }
   .books-container {
 		display: flex;
@@ -46,6 +46,12 @@
 		.quotes-container {
 			flex-wrap: nowrap;
 			grid-gap: 0.25rem;
+		}
+	}
+
+	@media (min-width: 750px) {
+		.books-container {
+			grid-template-columns: 1fr 1fr;
 		}
 	}
 </style>

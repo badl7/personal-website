@@ -65,8 +65,6 @@
 	.quote-card {
 		display: flex;
 		flex-direction: column;
-		border: 1px solid var(--app-foreground-color);
-		border-radius: 5px;
 		padding: 50px 20px 10px;
 		gap: 1rem;
 	}
@@ -87,21 +85,21 @@
 
   .timer {
     width: 100%;
-    height: 2px;
+    height: 2.5px;
     background-color: var(--app-primary-color);
     position: relative;
 
   }
   .left {
     position: absolute;
-    height: 2.25px;
+    height: 3px;
     left: 0;
     top: 0;
     background-color: #FF3535;
   }
 
 	@media (min-width: 1360px) {
-		.footer-quote {
+		.quote-card {
 			flex-wrap: nowrap;
 			grid-gap: 1rem;
 		}

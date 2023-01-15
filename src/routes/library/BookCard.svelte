@@ -45,12 +45,6 @@
         width: 20%; 
         height: 50px; 
     }
-    @media (min-width: 1360px) {
-		.row {
-			flex-wrap: nowrap;
-			grid-gap: 1rem;
-		}
-    } 
 
   </style>
   
