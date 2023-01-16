@@ -40,7 +40,9 @@
 		flex-direction: column;
 		gap: 10px;
 	}
-
+    .books-container h2 {
+		color: var(--app-link-color);
+	}
 	@media (min-width: 1360px) {
 		.quotes-container {
 			flex-wrap: nowrap;
