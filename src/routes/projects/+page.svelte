@@ -11,6 +11,12 @@
 	const projectsPromise = fetchProjects();
 </script>
 
+<svelte:head>
+	<title>Betül Gürbüz - Projects</title>
+
+	<meta name="twitter:title" content="Betül Gürbüz - Projects" />
+</svelte:head>
+
 <div class="projects-container">
 	{#await projectsPromise}
 		<h1>...</h1>
@@ -25,7 +31,7 @@
 
 <style>
 	.projects-container {
-		padding: 50px 0;
+		padding: 50px 25px;
 	}
 	.projects {
 		display: grid;

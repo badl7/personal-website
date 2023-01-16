@@ -28,7 +28,7 @@
 		if (latestPercentageInterval) {
 			clearInterval(latestPercentageInterval);
 			timeoutCompletePercentage = 0;
-      timeoutCompleteTime = 0;
+			timeoutCompleteTime = 0;
 		}
 		latestPercentageInterval = setupCompletePercentage(timeoutTime);
 		setTimeout(() => {
@@ -56,9 +56,9 @@
 	<div class="footer-quote">
 		<h3>-{quotes[currentQuoteIndex].author}</h3>
 	</div>
-  <div class="timer">
-    <div class="left" style="width: {timeoutCompletePercentage}%"></div>
-  </div>
+	<div class="timer">
+		<div class="left" style="width: {timeoutCompletePercentage}%" />
+	</div>
 </div>
 
 <style>
@@ -69,34 +69,31 @@
 		gap: 1rem;
 	}
 	.head-quote {
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		text-align: center;
-		border-radius: 50%; /* or any value you want */
+	}
+	.quote {
+		font-size: 18px;
 	}
 	.footer-quote {
-		display: flex;
-		gap: 1rem;
-		align-items: center;
-		padding: 10px 50px;
-		justify-content: flex-end;
+		text-align: end;
+		padding-right: 50px;
 	}
-
-  .timer {
-    width: 100%;
-    height: 2.5px;
-    background-color: var(--app-primary-color);
-    position: relative;
-
-  }
-  .left {
-    position: absolute;
-    height: 3px;
-    left: 0;
-    top: 0;
-    background-color: #FF3535;
-  }
+	.footer-quote h3 {
+		font-weight: 700;
+	}
+	.timer {
+		width: 100%;
+		height: 2.5px;
+		background-color: var(--app-primary-color);
+		position: relative;
+	}
+	.left {
+		position: absolute;
+		height: 3px;
+		left: 0;
+		top: 0;
+		background-color: #ff3535;
+	}
 
 	@media (min-width: 1360px) {
 		.quote-card {

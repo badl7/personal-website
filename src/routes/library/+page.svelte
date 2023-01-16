@@ -1,46 +1,45 @@
 <script lang="ts">
-  import BookCard from './BookCard.svelte';
-  import QuoteCard from './QuoteCard.svelte';
+	import BookSection from './BookSection.svelte';
+	import QuoteSection from './QuoteSection.svelte';
 </script>
 
-<div class="quotes-container">
-  <h2>Completing me Quotations</h2>
-  <div class="quotes">
-    <QuoteCard />   
-  </div>
-</div>
+<svelte:head>
+	<title>Betül Gürbüz - Library</title>
 
-<div class="books-container">
-  <h2>Library</h2>
-  <div class="books">
-    <BookCard />
-  </div>
+	<meta name="twitter:title" content="Betül Gürbüz - Library" />
+</svelte:head>
+
+<div class="library-container">
+	<div class="quotes-container">
+		<h2>Favorite Quotes</h2>
+		<QuoteSection />
+	</div>
+
+	<div class="books-container">
+		<h2>Favorite Books</h2>
+		<BookSection />
+	</div>
 </div>
 
 <style>
-  .quotes-container {
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-         
-  }
-  .quotes-container h2 {
-    color: var(--app-link-color);
-  }
-  .quotes {
-    padding: 5px;
-  }
-  .books-container {
+	.library-container {
+		padding: 50px 25px;
 		display: flex;
 		flex-direction: column;
-		grid-gap: 50px 0px;
-  }
-  .books-container h2 {
-    color: var(--app-link-color);
-  }
-  .books {
-		padding: 20px;
-  }
+		gap: 50px;
+	}
+	.quotes-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.quotes-container h2 {
+		color: var(--app-link-color);
+	}
+	.books-container {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
 
 	@media (min-width: 1360px) {
 		.quotes-container {
@@ -48,11 +47,4 @@
 			grid-gap: 0.25rem;
 		}
 	}
-
-	@media (min-width: 750px) {
-		.books-container {
-			grid-template-columns: 1fr 1fr;
-		}
-	}
 </style>
-

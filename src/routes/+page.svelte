@@ -13,6 +13,17 @@
 	const postsPromise = fetchPosts();
 </script>
 
+<svelte:head>
+	<title>Betül Gürbüz</title>
+
+
+    <meta property='og:title' content='Betül Gürbüz'/>
+    <meta property='og:description' content='Personal website of Betül Gürbüz'/>
+	<meta name="twitter:title" content="Betül Gürbüz" />
+	<meta name="twitter:description" content="Personal website of Betül Gürbüz" />
+	<meta name="Description" content="Personal website of Betül Gürbüz" />
+</svelte:head>
+
 <div class="landing-container">
 	<div class="greetings-container">
 		<div class="greetings">

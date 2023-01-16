@@ -6,6 +6,12 @@
 	</h1>
 </div>
 
+<svelte:head>
+	<title>Betül Gürbüz - Contact</title>
+
+	<meta name="twitter:title" content="Betül Gürbüz - Contact" />
+</svelte:head>
+
 <style>
 	.contact {
 		display: flex;
