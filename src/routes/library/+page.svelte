@@ -17,7 +17,7 @@
 
 	<div class="books-container">
 		<h2>Favorite Books</h2>
-		<BookSection />
+		<!-- <BookSection /> -->
 	</div>
 </div>
 
