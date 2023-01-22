@@ -1,3 +1,6 @@
-import type { Quote } from "$lib/models/quote";
-import { error } from "@sveltejs/kit";
+import type { RequestHandler } from './$types';
+import {QUOTES} from './constant';
 
+export const GET = (() => {
+    return new Response(JSON.stringify(QUOTES));
+}) satisfies RequestHandler;

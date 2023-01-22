@@ -1,6 +1,13 @@
 <script lang="ts">
+	import type { Quote } from '$lib/models/quote';
 	import BookSection from './BookSection.svelte';
 	import QuoteSection from './QuoteSection.svelte';
+
+	const fetchQuotes = async () => {
+		const res = await fetch('/api/quotes');
+		const body = await res.json();
+		return body as Quote[];
+	};
 </script>
 
 <svelte:head>
@@ -12,7 +19,13 @@
 <div class="library-container">
 	<div class="quotes-container">
 		<h2>Favorite Quotes</h2>
-		<QuoteSection />
+		{#await fetchQuotes()}
+			<h1>...</h1>
+		{:then quotes}
+			<QuoteSection {quotes} />
+		{:catch err}
+			<h1>An error occured</h1>
+		{/await}
 	</div>
 
 	<div class="books-container">
@@ -40,7 +53,7 @@
 		flex-direction: column;
 		gap: 10px;
 	}
-    .books-container h2 {
+	.books-container h2 {
 		color: var(--app-link-color);
 	}
 	@media (min-width: 1360px) {
