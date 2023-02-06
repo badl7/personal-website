@@ -68,16 +68,16 @@
 	}
 	.timer {
 		width: 100%;
-		height: 2.5px;
-		background-color: var(--app-primary-color);
+		height: 0.45px;
+		background-color: var(--app-text-color);
 		position: relative;
 	}
 	.left {
 		position: absolute;
-		height: 3px;
+		height: 0.8px;
 		left: 0;
 		top: 0;
-		background-color: #ff3535;
+		background-color: var(--app-primary-color);
 	}
 
 	@media (min-width: 1360px) {
