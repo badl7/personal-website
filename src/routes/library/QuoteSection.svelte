@@ -39,7 +39,7 @@
 		</p>
 	</div>
 	<div class="footer-quote">
-		<h3>-{quotes[currentQuoteIndex].author}</h3>
+		<h3>{quotes[currentQuoteIndex].author}</h3>
 	</div>
 	<div class="timer">
 		<div class="left" style="width: {timeoutCompletePercentage}%" />
@@ -69,12 +69,12 @@
 	.timer {
 		width: 100%;
 		height: 0.45px;
-		background-color: var(--app-text-color);
+		background-color: var(--app-header-color);
 		position: relative;
 	}
 	.left {
 		position: absolute;
-		height: 0.8px;
+		height: 0.7px;
 		left: 0;
 		top: 0;
 		background-color: var(--app-primary-color);

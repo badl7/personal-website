@@ -18,12 +18,12 @@
 
 <style>
 	:root {
-		--app-background-color: #61305d;
-		--app-foreground-color: #83577f;
-		--app-primary-color: #b55c6c;
-		--app-link-color: #ff9800;
-		--app-header-color: #f7b679;
-		--app-text-color: #ffc8d2;
+		--app-background-color: #260C07;
+		--app-foreground-color: #8C5346;
+		--app-primary-color: #590902;
+		--app-link-color: #BF9484;
+		--app-header-color: #8C5346;
+		--app-text-color: #F0F2F2;
 		--app-header-font: 'Kaisei Decol';
 		--app-text-font: 'Jacques Francois';
 	}

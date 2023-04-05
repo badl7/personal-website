@@ -54,7 +54,7 @@
 		top: 0;
 		width: 100%;
 		height: fit-content;
-		background-color: #6d3c69;
+		background-color: #2e130a;
 		padding-top: 60px;
 		padding-bottom: 10px;
 		font-size: 21px;

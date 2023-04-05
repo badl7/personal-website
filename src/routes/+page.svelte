@@ -16,9 +16,8 @@
 <svelte:head>
 	<title>Betül Gürbüz</title>
 
-
-    <meta property='og:title' content='Betül Gürbüz'/>
-    <meta property='og:description' content='Personal website of Betül Gürbüz'/>
+	<meta property="og:title" content="Betül Gürbüz" />
+	<meta property="og:description" content="Personal website of Betül Gürbüz" />
 	<meta name="twitter:title" content="Betül Gürbüz" />
 	<meta name="twitter:description" content="Personal website of Betül Gürbüz" />
 	<meta name="Description" content="Personal website of Betül Gürbüz" />
@@ -29,18 +28,10 @@
 		<div class="greetings">
 			<p>Hello, World!</p>
 			<p>
-				I’m Betül: With a background in mathematics and mathematical physics, I am now pursuing my
-				passion for artificial intelligence.
-			</p>
-			<p>
-				As a mathematician and researcher, I am constantly seeking new ways to push the boundaries
-				and explore the limitless potential of this exciting field. Whether it's through data
-				analysis, machine learning, or mathematical modeling, I am always seeking out new challenges
-				and opportunities to make a difference in the world of AI.
-			</p>
-			<p>
-				I am dedicated, enthusiastic, and driven to succeed, and I am excited to see where my work
-				in artificial intelligence will take me.
+				I'm Betül, passionate about AI and with a background in mathematics and mathematical
+				physics. I constantly seek new challenges and opportunities to explore the limitless
+				potential of AI through data analysis, machine learning, and mathematical modeling. I'm
+				dedicated, enthusiastic, and determined to succeed in the field of AI.
 			</p>
 		</div>
 		<img src={personalPhoto} alt="Personal photograph of Betül Gürbüz" class="personal-photo" />
@@ -57,7 +48,7 @@
 			{:catch err}
 				<h1>error..</h1>
 			{/await}
-	    </div>
+		</div>
 	</div>
 </div>
 
@@ -65,14 +56,14 @@
 	.landing-container {
 		display: flex;
 		flex-direction: column;
-		padding: 50px 0;
+		padding: 100px 50px;
 		grid-gap: 50px;
 	}
 	.greetings-container {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		grid-gap: 2rem;
+		grid-gap: 4rem;
 		flex-wrap: wrap;
 	}
 	.greetings {
@@ -82,10 +73,10 @@
 		order: 2;
 	}
 	.personal-photo {
-		border-radius: 10px;
-		box-shadow: 10px 5px var(--app-primary-color);
+		border-radius: 15px;
+		box-shadow: 10px 5px var(--app-header-color);
 		order: 1;
-		width: 200px;
+		width: 700px;
 	}
 	.blog-posts {
 		display: flex;
@@ -93,17 +84,17 @@
 		grid-gap: 50px 0px;
 	}
 	.blog-posts h2 {
-		color: var(--app-link-color);
+		color: var(--app-header-color);
 	}
 	.post-content {
 		display: flex;
 		flex-direction: column;
-		grid-gap: 1rem;
+		grid-gap: 0.5rem;
 	}
 	@media (min-width: 485px) {
 		.personal-photo {
 			width: 280px;
-			box-shadow: 20px 10px var(--app-primary-color);
+			box-shadow: 20px 10px var(--app-background-color);
 		}
 	}
 	@media (min-width: 750px) {

@@ -39,11 +39,11 @@
 			<div class="counts">
 				<div class="count">
 					<p>{project.starCount}</p>
-					<Star size={18} color="var(--app-text-color)" />
+					<Star size={18} color="var(--app-link-color)" />
 				</div>
 				<div class="count">
 					<p>{project.forkCount}</p>
-					<Fork size={18} color="var(--app-text-color)" />
+					<Fork size={18} color="var(--app-link-color)" />
 				</div>
 			</div>
 		</div>
@@ -54,10 +54,11 @@
 	.project-card {
 		display: flex;
 		flex-direction: column;
-		border: 2px solid var(--app-foreground-color);
-		border-radius: 5px;
-		padding: 10px 20px;
+		border: 2px solid #2e130c;
+		border-radius: 7px;
+		padding: 5px 10px;
 		gap: 1rem;
+		background-color: #2e130a;
 	}
 	.head {
 		display: flex;
@@ -66,6 +67,7 @@
 	}
 	.head h3:hover {
 		text-decoration: underline;
+		color: var(--app-primary-color);
 	}
 	.footer {
 		justify-content: space-between;
@@ -85,11 +87,11 @@
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		background-color: var(--app-primary-color);
-		color: var(--app-text-color);
+		background-color: var(--app-header-color);
+		color: var(--app-background-color);
 		font-size: 14px;
 		border-radius: 5px;
-		padding: 4px 6px;
+		padding: 2px 4px;
 	}
 	.footer-end {
 		display: flex;

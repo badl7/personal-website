@@ -2,14 +2,14 @@ import type { Book } from "$lib/models/book";
 
 export let BOOKS: Book[] = [
     {
-      title: " The Emperor's New Mind: Concerning Computers, Minds, and the Laws of Physics",
-      author: "Roger Penrose",
-      isbn: "9780198784920"
+        title: " The Emperor's New Mind: Concerning Computers, Minds, and the Laws of Physics",
+        author: "Roger Penrose",
+        isbn: "9780198784920"
     },
     {
-      title: "Manifolds, Tensor Analysis, and Applications",
-      author: "Tudor Ratiu, Jerrold E. Marsden, Ralph Abraham",
-      isbn: "9780387967905"
+        title: "Manifolds, Tensor Analysis, and Applications",
+        author: "Tudor Ratiu, Jerrold E. Marsden, Ralph Abraham",
+        isbn: "9780387967905"
     },
     {
         title: "Broca's Brain: Reflections on the Romance of Science",
@@ -51,6 +51,4 @@ export let BOOKS: Book[] = [
         author: "Yoichiro Nambu",
         isbn: "9789971966652"
     }
-
-  ];
-  
+];

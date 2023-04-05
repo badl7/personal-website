@@ -8,19 +8,19 @@
 
 <footer>
 	<a href="https://www.linkedin.com/in/betul-gurbuz-dev/">
-		<Linkedin size={24} color="var(--app-text-color)" />
+		<Linkedin size={24} color="var(--app-link-color)" />
 	</a>
 	<a href="https://www.kaggle.com/badl071">
-		<Kaggle size={24} color="var(--app-text-color)" />
+		<Kaggle size={24} color="var(--app-link-color)" />
 	</a>
 	<a href="https://github.com/badl7">
-		<Github size={24} color="var(--app-text-color)" />
+		<Github size={24} color="var(--app-link-color)" />
 	</a>
 	<a href="https://medium.com/@betul.gurbuz.dev">
-		<Medium size={24} color="var(--app-text-color)" />
+		<Medium size={24} color="var(--app-link-color)" />
 	</a>
 	<a href="https://twitter.com/7Betl">
-		<Twitter size={24} color="var(--app-text-color)" />
+		<Twitter size={24} color="var(--app-link-color)" />
 	</a>
 </footer>
 

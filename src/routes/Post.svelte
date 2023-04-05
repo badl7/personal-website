@@ -24,15 +24,16 @@
 <style>
 	a:hover h3 {
 		text-decoration: underline;
-		color: #FF3535;
+		color: var(--app-primary-color);
 	}
 	.post {
 		display: flex;
 		flex-direction: column;
-		grid-gap: 10px;
+		grid-gap: 5px;
 		padding: 5px 10px;
-		border: 1px solid var(--app-foreground-color);
-		border-radius: 5px;
+		border: 1px solid #250d08;
+		border-radius: 10px;
+		background-color: #2e130a;
 	}
 	.head {
 		display: flex;
@@ -50,8 +51,8 @@
 		justify-content: center;
 		padding: 4px 6px;
 		border-radius: 5px;
-		background-color: var(--app-primary-color);
-		color: #323232;
+		background-color: var(--app-header-color);
+		color: var(--app-primary-color);
 		font-size: 14px;
 	}
 

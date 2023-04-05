@@ -23,10 +23,11 @@
 		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	}
 	.contact a {
-		color: #FF3535;
+		color: var(--app-header-color);
 	}
 	.contact a:hover {
 		text-decoration: underline;
+		color: var(--app-primary-color);
 	}
 	.contact h1 {
 		font-size: 42px;

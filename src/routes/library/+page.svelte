@@ -46,7 +46,7 @@
 		flex-direction: column;
 	}
 	.quotes-container h2 {
-		color: var(--app-link-color);
+		color: var(--app-header-color);
 	}
 	.books-container {
 		display: flex;
@@ -54,7 +54,7 @@
 		gap: 10px;
 	}
 	.books-container h2 {
-		color: var(--app-link-color);
+		color: var(--app-header-color);
 	}
 	@media (min-width: 1360px) {
 		.quotes-container {

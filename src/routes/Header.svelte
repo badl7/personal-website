@@ -20,10 +20,11 @@
 	nav {
 		display: flex;
 		align-items: center;
+		font-family: var(--app-header-font);
 	}
 	.banner {
 		font-size: 24px;
-		z-index: 1;
+		z-index: 5;
 	}
 	.links {
 		display: none;
