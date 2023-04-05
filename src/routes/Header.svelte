@@ -24,7 +24,7 @@
 	}
 	.banner {
 		font-size: 24px;
-		z-index: 5;
+		z-index: 2;
 	}
 	.links {
 		display: none;
