@@ -1,7 +1,9 @@
 <script lang="ts">
 	import Post from './Post.svelte';
+	import Chat from './ChatBot.svelte';
 	import personalPhoto from '$lib/images/photo.jpg';
 	import type { BlogPost } from '$lib/models/blog-post';
+	
 
 	const fetchPosts = async (): Promise<BlogPost[]> => {
 		const res = await fetch('/api/posts');
@@ -11,6 +13,12 @@
 	};
 
 	const postsPromise = fetchPosts();
+
+	let chatOpen = false;
+
+	function toggleChat() {
+		chatOpen = !chatOpen; 
+		}
 </script>
 
 <svelte:head>
@@ -50,6 +58,15 @@
 			{/await}
 		</div>
 	</div>
+	<div class="chat-block">
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<div class="chat-bubble" on:click={toggleChat} >
+		    <p>Ask HariSeldon</p>
+		</div>
+		{#if chatOpen}
+			<Chat />
+		{/if}
+	</div>	
 </div>
 
 <style>
@@ -90,6 +107,16 @@
 		display: flex;
 		flex-direction: column;
 		grid-gap: 0.5rem;
+	}
+	.chat-block {
+		display: flex;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+	}
+	.chat-bubble p {
+		display: flex;
+		flex-direction: row-reverse;
 	}
 	@media (min-width: 485px) {
 		.personal-photo {

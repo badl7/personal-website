@@ -23,9 +23,17 @@
 		"prettier-plugin-svelte": "^2.8.1",
 		"svelte": "^3.54.0",
 		"svelte-check": "^2.9.2",
+		"tailwindcss": "^3.2.7",
 		"tslib": "^2.4.1",
 		"typescript": "^4.9.3",
-		"vite": "^4.5.2"
+		"vite": "^4.1.4",
+		"vitest": "^0.25.8"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"gpt3-tokenizer": "^1.1.5",
+		"dotenv": "^16.4.1",
+		"openai": "^3.2.1",
+		"sse.js": "^0.6.1"
+	}
 }
