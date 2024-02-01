@@ -12,18 +12,29 @@ const projects: Project[] = [
 	},
 	{
 		name: 'heart_disease-ML_project',
+		url: '',
+		inProgress: true
+	},
+	{
+		name: 'yolov8-webcam-live',
+		url: '',
+		inProgress: true
+	},
+	{
+		name: 'CatsVsDogs-FlaskApp',
 		url: ''
+	},
+	{
+		name: 'personal-website',
+		url: '',
+		inProgress: true
 	},
 	{
 		name: 'STeachApp-Proje',
 		url: '',
 		inProgress: true
-	},
-	{
-		name: 'YapBitir-App',
-		url: '',
-		inProgress: true
 	}
+	
 ];
 
 export const GET = (async ({ fetch }) => {

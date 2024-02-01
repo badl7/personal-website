@@ -7,3 +7,11 @@ declare namespace App {
 	// interface PageData {}
 	// interface Platform {}
 }
+declare namespace svelteHTML {
+	// enhance elements
+	interface IntrinsicElements {}
+	// enhance attributes
+	interface HTMLAttributes<T> {
+		'on:clickOut'?: (event: any) => any;
+	}
+}

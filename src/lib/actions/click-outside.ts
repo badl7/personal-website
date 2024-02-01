@@ -1,9 +1,13 @@
-export function clickOutside(node: Node, ignoreNode: Node | null = null) {
+export function clickOutside(node: Node, ignoreNode: Node | null = null): { destroy(): void } {
 	const handleClick = (event: Event) => {
-		if (node && !node.contains(event.target as Node) && !event.defaultPrevented) {
-			if (ignoreNode && !ignoreNode.contains(event.target as Node)) {
-				node.dispatchEvent(new CustomEvent('click_outside', node as CustomEventInit));
-			}
+		if (
+			node &&
+			!node.contains(event.target as Node) &&
+			!event.defaultPrevented &&
+			ignoreNode &&
+			!ignoreNode.contains(event.target as Node)
+		) {
+			node.dispatchEvent(new CustomEvent('clickOut', { detail: node })); // detail ile node'u iletebilirsiniz
 		}
 	};
 
